@@ -1,17 +1,29 @@
-/* CSS Styles Here */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; 
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
+  color: #fff;
+  background-color: #333;
+}
+
+.button-group {
+  display: flex;
+}
+
+.button-group button {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
 }
 
 main {
@@ -25,4 +37,58 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.box {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.box img {
+  width: 250px;
+  height: 250px;
+}
+
+.box h2,
+.box p {
+  margin: 5px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; 
+}
+
+.anime-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  width: 230px;
+  border: 2px solid #333;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.anime-button img {
+  width: 138px;
+  height: 207px;
+}
+
+.spacer {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-button{
+  height: 100px;
+  width: 200px;
 }

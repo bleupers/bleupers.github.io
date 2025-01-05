@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>helo cat</title>
   <script src="script.js"></script>
@@ -11,18 +12,53 @@
 <body>
   <header>
     <h1>my silly website</h1>
+    <div class="button-group">
+      <button id="home-button" onClick="ToggleDiv('home')">Home</button>
+      <button id="collection-button" onClick="ToggleDiv('collection')">Collection</button>
+      <button id="game-button" onClick="ToggleDiv('game')">Game</button>
+      <button id="rec-button" onClick="window.location.href = 'recs.html'">Recommendations</button>
+    </div>
   </header>
 
   <main>
-    <h2 id="rcName">i love html</h2>
-    <p id="rcDesc">super cool stuff.</p>
-    <img src="" alt="" width="250" height="250" id="rcIcon"/><br>
-    <button onclick="RollCharacter()">Roll Character</button>
-
+    <div id="home-div" style="display: block;">
+      <h2 id="rcName">i love html</h2>
+      <p id="rcDesc">super cool stuff.</p>
+      <img src="" alt="" width="250" height="250" id="rcIcon" /><br>
+      <button onclick="RollCharacter()">Roll Character</button>
+    </div>
+    <div id="collection-div" style="display: none;">
+      <div class="box-container" id="boxContainer"></div>
+    </div>
+    <div id="animegame-div" style="display:none">
+      <h2 id="animegame-title">guems the higher rated show (anilist)</h2>
+      <p id="animegame-subtitle"> your current score is</p>
+      <p id="animegame-subtitle-two"> your high score is</p>
+      <div class="button-container" id="animebg">
+        <button class="anime-button" id="left-anime-button" onclick="MakeGuess(1)">
+          <span id="left-anime-rating" style="font-size:24px"></span>
+          <br>
+          <img src="" id="left-anime-image" width="200" height="250">
+          <br>
+          <span id="left-anime-title"></span>
+        </button>
+        <div class="spacer">
+          <button class="start-button" onclick="StartGame()">start</button>
+        </div>
+        <button class="anime-button" id="right-anime-button" onclick="MakeGuess(2)">
+          <span id="right-anime-rating"style="font-size:24px"></span>
+          <br>
+          <img src="" id="right-anime-image" width="200" height="250">
+          <br>
+          <span id="right-anime-title"></span>
+        </button>
+      </div>
+    </div>
   </main>
 
   <footer>
     &copy; real cool stuff.
   </footer>
 </body>
+
 </html>

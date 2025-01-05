@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>recommendation finder 1005</title>
+  <script src="recscript.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" type="image/png" href="images/dogekek.png" />
+</head>
+
+
+<body>
+  <header>
+    <h1>my silly website</h1>
+    <div class="button-group">
+      <button id="home-button" onClick="window.location.href = 'index.html'">Home</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="home-div" style="display: block;">
+      <h2 id="rcName">find anime recommendations</h2>
+      <p id="rcDesc">enter anilist user (because im too lazy to learn more apis).</p>
+      <input type="text" id="user-id-input">
+      <button id="search-button" onClick="GetUserData()">get data</button>
+    </div>
+  </main>
+
+  <footer>
+    &copy; real cool stuff.
+  </footer>
+</body>
+
+</html>

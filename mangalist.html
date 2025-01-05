@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>helo cat</title>
+    <script src="mangascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="images/dogekek.png" />
+</head>
+
+
+<body>
+    <header>
+        <h1>my silly website</h1>
+        <div class="button-group" style="display:none">
+            <button id="home-button" onClick="ToggleDiv('home')">Home</button>
+            <button id="collection-button" onClick="ToggleDiv('collection')">Collection</button>
+            <button id="game-button" onClick="ToggleDiv('game')">Game</button>
+        </div>
+    </header>
+
+    <main>
+        <form id="username-form" onsubmit="UserSearch(event)"><br /><label for="u">username
+            </label><input id="p" type="text" name="username" required="required" /><br /><br />
+            <input type="submit" value="Submit" /></form>
+        <div id="list-div" style="display: block;">
+            <div class="box-container" id="boxContainer">
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; real cool stuff.
+    </footer>
+</body>
+
+</html>
